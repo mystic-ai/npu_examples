@@ -21,7 +21,7 @@ vad_audio = VADAudio(aggressiveness=2 ,
                      device=2)
 ```
 
-To test deepspeech here you simply run:
+To test deepspeech here you simply install the requirements (```pip3 install -r requirements```) and then run:
 
 ```python3 test_stream.py```
 
@@ -29,4 +29,4 @@ Or
 
 ```python test_stream.py```
 
-Depending on your setup
+Depending on your setup. Please feel free to drop feedback or give requests!
