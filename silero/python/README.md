@@ -33,7 +33,7 @@ Depending on your setup. Please feel free to drop feedback or give requests!
 Full terminal script to test out of the box in a virtual python env (this does assume you have put your Neuro API key as an environment variable as shown above, and you have a mic on device_id 2):
 
 ```
-git clone -b silero https://github.com/neuro-ai-dev/npu_examples.git
+git clone https://github.com/neuro-ai-dev/npu_examples.git
 cd npu_examples/silero/python
 python3 -m venv venv
 source venv/bin/activate
