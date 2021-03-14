@@ -20,7 +20,7 @@ vad_audio = VADAudio(aggressiveness=2 ,
                      device=2)
 ```
 
-To test deepspeech here you simply install the requirements (`pip3 install -r requirements.txt`) and then run:
+To test Silero here you simply install the requirements (`pip3 install -r requirements.txt`) and then run:
 
 `python3 test_stream.py`
 
@@ -29,5 +29,18 @@ Or
 `python test_stream.py`
 
 Depending on your setup. Please feel free to drop feedback or give requests!
+
+Full terminal script to test out of the box in a virtual python env (this does assume you have put your Neuro API key as an environment variable as shown above):
+
+```
+git clone https://github.com/neuro-ai-dev/npu_examples.git
+cd npu_examples/silero/python
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -U pip
+pip install -r requirements.txt
+
+python test_stream.py
+```
 
 [Silero git repo](https://github.com/snakers4/silero-models)
