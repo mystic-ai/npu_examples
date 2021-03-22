@@ -147,7 +147,7 @@ for frame in frames:
         logging.debug("end utterence")
         data = np.concatenate(data)
         start = datetime.utcnow()
-        text = npu.predict("604d7d6b0103c2bf2425fa2c", data, scripts=["silero_stream"])
+        text = npu.predict("6050e05cdc870f559b1bcfc5", data)
         end = datetime.utcnow()
         print(f"Took {(end-start).total_seconds()}")
         data = []
