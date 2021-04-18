@@ -1,3 +1,5 @@
 *venv
 spade/SPADE
 playground.py
+upload.py
+gpt/python/gpt2_prediction_srv.py
