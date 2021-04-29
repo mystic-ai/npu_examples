@@ -6,5 +6,9 @@
     {
         "name": "Silero",
         "path": "silero"
+    },
+    {
+        "name": "GPT-2",
+        "path": "gpt-2"
     }
 ]
