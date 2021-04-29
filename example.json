@@ -1,0 +1,10 @@
+[
+    {
+        "name": "DeepSpeech",
+        "path": "deepspeech"
+    },
+    {
+        "name": "Silero",
+        "path": "silero"
+    }
+]
