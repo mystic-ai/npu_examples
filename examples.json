@@ -1,0 +1,17 @@
+[
+    {
+        "name": "DeepSpeech",
+        "path": "deepspeech",
+        "tags": ["nlp"]
+    },
+    {
+        "name": "Silero",
+        "path": "silero",
+        "tags": ["nlp"]
+    },
+    {
+        "name": "GPT-2",
+        "path": "gpt-2",
+        "tags": ["nlp"]
+    }
+]
