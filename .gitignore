@@ -4,3 +4,5 @@ playground.py
 upload.py
 gpt/python/gpt2_prediction_srv.py
 bert/python/bert_question_answer_prediction_srv.py
+*_srv.py
+detectron2/python/input.jpg
