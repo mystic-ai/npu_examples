@@ -2,16 +2,40 @@
     {
         "name": "DeepSpeech",
         "path": "deepspeech",
-        "tags": ["nlp"]
+        "tags": ["NLP"]
     },
     {
         "name": "Silero",
         "path": "silero",
-        "tags": ["nlp"]
+        "tags": ["NLP"]
     },
     {
         "name": "GPT-2",
         "path": "gpt-2",
-        "tags": ["nlp"]
+        "tags": ["NLP"]
+    },
+    {
+        "__test__": "true",
+        "name": "Detectron2",
+        "path": "detectron2",
+        "tags": ["Vision", "Segmentation"]
+    },
+    {
+        "__test__": "true",
+        "name": "Detectron2",
+        "path": "detectron2",
+        "tags": ["Vision", "Bounding Boxes"]
+    },
+    {
+        "__test__": "true",
+        "name": "GPT-2",
+        "path": "gpt-2",
+        "tags": ["NLP", "Summarization"]
+    },
+    {
+        "__test__": "true",
+        "name": "GPT-2",
+        "path": "gpt-2",
+        "tags": ["NLP", "Translation", "en-es"]
     }
 ]
