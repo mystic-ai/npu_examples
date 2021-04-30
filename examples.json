@@ -1,38 +1,45 @@
 [
     {
+        "id": "SBS3hm",
         "name": "DeepSpeech",
         "path": "deepspeech",
         "tags": ["NLP"]
     },
     {
+        "id": "Ypvh34",
         "name": "Silero",
         "path": "silero",
         "tags": ["NLP"]
     },
     {
+        "id": "69Xbea",
         "name": "GPT-2",
         "path": "gpt-2",
         "tags": ["NLP"]
     },
     {
+        "id": "ocZkfW",
         "__test__": "true",
         "name": "Detectron2",
         "path": "detectron2",
         "tags": ["Vision", "Segmentation"]
     },
     {
+        "id": "sCDYM7",
         "__test__": "true",
         "name": "Detectron2",
         "path": "detectron2",
         "tags": ["Vision", "Bounding Boxes"]
     },
     {
+        "id": "D99ACP",
         "__test__": "true",
         "name": "GPT-2",
         "path": "gpt-2",
         "tags": ["NLP", "Summarization"]
     },
     {
+        "id": "LoF9vy",
         "__test__": "true",
         "name": "GPT-2",
         "path": "gpt-2",
