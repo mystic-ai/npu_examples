@@ -1,8 +1,8 @@
 # GPT-Neo-125M
 
-### Tags
+#### Tags
 
-['Text Generation']
+> ['Text Generation']
 
 ### Model Description
 
