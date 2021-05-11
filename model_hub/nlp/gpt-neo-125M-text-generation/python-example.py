@@ -1,10 +1,8 @@
-# For Python users, install the Python `npu` package from pip. You can refer to our docs here[]
-
 import npu
 
 npu.api('API_TOKEN', deployed=True)
 
-model_id = '60950c8f178c4a48d9d3f533'
+model_id = '60996ffa6a3a08b76f5a1b70'
 data = [['When I visit Bath I will']]
 
 args = {
