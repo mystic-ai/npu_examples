@@ -1,3 +1,5 @@
+# For Python users, install the Python `npu` package from pip. You can refer to our docs here[]
+
 import npu
 
 npu.api('API_TOKEN', deployed=True)
