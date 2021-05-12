@@ -23,7 +23,3 @@ stream = BytesIO(imgdata)
 
 image = Image.open(stream).convert("RGBA")
 image.show()
-
-filename = 'result_image.jpeg'
-with open(filename, 'wb') as f:
-    f.write(imgdata)

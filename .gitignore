@@ -13,3 +13,5 @@ detectron2/python/some_image.jpeg
 detectron2/python/some_image.jpg
 detectron2/python/some_image.png
 detectron2/python/exp1.jpeg
+model_hub/vision/detectron2-bounding-boxes/bounding_boxes.py
+model_hub/vision/clip/test3.jpg
