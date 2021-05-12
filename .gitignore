@@ -5,4 +5,11 @@ upload.py
 gpt/python/gpt2_prediction_srv.py
 bert/python/bert_question_answer_prediction_srv.py
 *_srv.py
-detectron2/python/input.jpg
+detectron2/python/test.jpg
+detectron2/python/test2.jpg
+detectron2/python/test3.jpg
+.DS_Store
+detectron2/python/some_image.jpeg
+detectron2/python/some_image.jpg
+detectron2/python/some_image.png
+detectron2/python/exp1.jpeg
