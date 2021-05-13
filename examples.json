@@ -1,0 +1,74 @@
+[
+  {
+    "model_id": "",
+    "name": "bart-large-cnn-summarization",
+    "path": "/bart-large-cnn-summarization",
+    "category": "NLP",
+    "nlpFilter": "Summarization",
+    "tags": ["Summarization"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "bert-base-uncased-fill-mask",
+    "path": "/bert-base-uncased-fill-mask",
+    "category": "NLP",
+    "nlpFilter": "Fill Mask",
+    "tags": ["Fill Mask"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "distilbert-base-uncased-classification",
+    "path": "/distilbert-base-uncased-classification",
+    "category": "NLP",
+    "nlpFilter": "Classification",
+    "tags": ["Classification"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "distilbert-base-uncased-question-answering",
+    "path": "/distilbert-base-uncased-question-answering",
+    "category": "NLP",
+    "nlpfilter": "Question Answering",
+    "tags": ["Question Answering"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "gpt-2-text-generation",
+    "path": "/gpt-2-text-generation",
+    "category": "NLP",
+    "nlpFilter": "Text Generation",
+    "tags": ["Text Generation"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "gpt-neo-125M-text-generation",
+    "path": "/gpt-neo-125M-text-generation",
+    "category": "NLP",
+    "nlpFilter": "Text Generation",
+    "tags": ["Text Generation"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "mbart-large-50-multi-translation",
+    "path": "/mbart-large-50-multi-translation",
+    "category": "NLP",
+    "nlpFilter": "Translation",
+    "tags": ["Translation"],
+    "predictionTime": 0.8
+  },
+  {
+    "model_id": "",
+    "name": "detectron2-bounding-boxes",
+    "path": "/detectron2-bounding-boxes",
+    "category": "Vision",
+    "visionFilter": "Bounding Boxes",
+    "tags": ["Bounding Boxes"],
+    "predictionTime": 0.8
+  }
+]
