@@ -1,5 +1,6 @@
 [
   {
+    "objectID": "qo38f7iyuhbjq98nolk",
     "model_id": "",
     "name": "bart-large-cnn-summarization",
     "path": "/bart-large-cnn-summarization",
@@ -9,6 +10,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "qw48of7igubkjqf398ohiubn",
     "model_id": "",
     "name": "bert-base-uncased-fill-mask",
     "path": "/bert-base-uncased-fill-mask",
@@ -18,6 +20,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "3q847iubkjnrqh9iubnkj",
     "model_id": "",
     "name": "distilbert-base-uncased-classification",
     "path": "/distilbert-base-uncased-classification",
@@ -27,6 +30,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "890ohijq43f98hounj",
     "model_id": "",
     "name": "distilbert-base-uncased-question-answering",
     "path": "/distilbert-base-uncased-question-answering",
@@ -36,6 +40,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "98ohiunqclk3woh8inlk",
     "model_id": "",
     "name": "gpt-2-text-generation",
     "path": "/gpt-2-text-generation",
@@ -45,6 +50,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "pmoij089h78byiqvm",
     "model_id": "",
     "name": "gpt-neo-125M-text-generation",
     "path": "/gpt-neo-125M-text-generation",
@@ -54,6 +60,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "f389oinlkfqoinlk",
     "model_id": "",
     "name": "mbart-large-50-multi-translation",
     "path": "/mbart-large-50-multi-translation",
@@ -63,6 +70,7 @@
     "predictionTime": 0.8
   },
   {
+    "objectID": "q3f89oinlkoijlnkm9poijkl",
     "model_id": "",
     "name": "detectron2-bounding-boxes",
     "path": "/detectron2-bounding-boxes",
