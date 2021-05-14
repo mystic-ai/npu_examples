@@ -11,33 +11,33 @@
   },
   {
     "objectID": "qw48of7igubkjqf398ohiubn",
-    "model_id": "",
-    "name": "bert-base-uncased-fill-mask",
+    "model_id": "609d62068b6a667ad9b2da20",
+    "name": "BERT base uncased",
     "path": "/bert-base-uncased-fill-mask",
     "category": "NLP",
     "nlpFilter": "Fill Mask",
     "tags": ["Fill Mask"],
-    "predictionTime": 0.8
+    "predictionTime": 0.2
   },
   {
     "objectID": "3q847iubkjnrqh9iubnkj",
-    "model_id": "",
-    "name": "distilbert-base-uncased-classification",
+    "model_id": "609d67b30421e5d2d7053496",
+    "name": "DistilBERT base uncased",
     "path": "/distilbert-base-uncased-classification",
     "category": "NLP",
     "nlpFilter": "Classification",
-    "tags": ["Classification"],
-    "predictionTime": 0.8
+    "tags": ["Sentiment Analysis"],
+    "predictionTime": 0.2
   },
   {
     "objectID": "890ohijq43f98hounj",
-    "model_id": "",
-    "name": "distilbert-base-uncased-question-answering",
+    "model_id": "609d575b0421e5d2d70533e2",
+    "name": "DistilBERT base uncased",
     "path": "/distilbert-base-uncased-question-answering",
     "category": "NLP",
     "nlpfilter": "Question Answering",
     "tags": ["Question Answering"],
-    "predictionTime": 0.8
+    "predictionTime": 0.2
   },
   {
     "objectID": "98ohiunqclk3woh8inlk",
@@ -51,23 +51,23 @@
   },
   {
     "objectID": "pmoij089h78byiqvm",
-    "model_id": "",
-    "name": "gpt-neo-125M-text-generation",
+    "model_id": "609d50cb8b6a667ad9b2d9f6",
+    "name": "GPT Neo 125M",
     "path": "/gpt-neo-125M-text-generation",
     "category": "NLP",
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
-    "predictionTime": 0.8
+    "predictionTime": 0.2
   },
   {
     "objectID": "f389oinlkfqoinlk",
-    "model_id": "",
-    "name": "mbart-large-50-multi-translation",
+    "model_id": "609d45f40421e5d2d7053349",
+    "name": "MBart large",
     "path": "/mbart-large-50-multi-translation",
     "category": "NLP",
     "nlpFilter": "Translation",
-    "tags": ["Translation"],
-    "predictionTime": 0.8
+    "tags": [["Translation"], ["multilingual"]],
+    "predictionTime": 0.2
   },
   {
     "objectID": "q3f89oinlkoijlnkm9poijkl",
