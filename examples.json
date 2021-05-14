@@ -17,7 +17,9 @@
     "category": "NLP",
     "nlpFilter": "Fill Mask",
     "tags": ["Fill Mask"],
-    "predictionTime": 0.2
+    "predictionTime": 0.2,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "defaultInput": "Have you seen my [MASK]?"
   },
   {
     "objectID": "3q847iubkjnrqh9iubnkj",
@@ -27,7 +29,9 @@
     "category": "NLP",
     "nlpFilter": "Classification",
     "tags": ["Sentiment Analysis"],
-    "predictionTime": 0.2
+    "predictionTime": 0.2,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "defaultInput": "Birds are beautiful animals"
   },
   {
     "objectID": "890ohijq43f98hounj",
@@ -37,7 +41,9 @@
     "category": "NLP",
     "nlpfilter": "Question Answering",
     "tags": ["Question Answering"],
-    "predictionTime": 0.2
+    "predictionTime": 0.2,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "defaultInput": "Where is Ethiopia?"
   },
   {
     "objectID": "98ohiunqclk3woh8inlk",
@@ -47,7 +53,9 @@
     "category": "NLP",
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
-    "predictionTime": 0.8
+    "predictionTime": 0.8,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "defaultInput": "My favourite animal is a narwhal because"
   },
   {
     "objectID": "pmoij089h78byiqvm",
@@ -57,7 +65,9 @@
     "category": "NLP",
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
-    "predictionTime": 0.2
+    "predictionTime": 0.2,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "defaultInput": "One day, I hope to be"
   },
   {
     "objectID": "f389oinlkfqoinlk",
@@ -67,7 +77,9 @@
     "category": "NLP",
     "nlpFilter": "Translation",
     "tags": [["Translation"], ["multilingual"]],
-    "predictionTime": 0.2
+    "predictionTime": 0.2,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "defaultInput": "Are you going home today?"
   },
   {
     "objectID": "q3f89oinlkoijlnkm9poijkl",
@@ -77,6 +89,7 @@
     "category": "Vision",
     "visionFilter": "Bounding Boxes",
     "tags": ["Bounding Boxes"],
-    "predictionTime": 0.8
+    "predictionTime": 0.8,
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2"
   }
 ]
