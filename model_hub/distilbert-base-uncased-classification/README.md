@@ -42,7 +42,7 @@ If you run the script above, in your terminal you will see the following,
 [Neuro Ai] 17:54:06 - [INFO]: DEPLOYMENT MODE
 [Neuro Ai] 17:54:06 - [INFO]: Token successfully authenticated
 [Neuro Ai] 17:54:06 - [INFO]: Using project: Default
-[{'label': 'NEGATIVE', 'score': 0.8823599219322205}, {'label': 'POSITIVE', 'score': 0.11764004826545715}]
+[{'label': 'NEGATIVE', 'score': 0.0001330671220785007}, {'label': 'POSITIVE', 'score': 0.9998669624328613}]
 ```
 
 ### BibTeX and Citation
