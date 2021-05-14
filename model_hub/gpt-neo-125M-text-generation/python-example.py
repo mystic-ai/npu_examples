@@ -2,12 +2,12 @@ import npu
 
 npu.api('API_TOKEN', deployed=True)
 
-model_id = '60996ffa6a3a08b76f5a1b70'
-data = [['When I visit Bath I will']]
+model_id = '609d50cb8b6a667ad9b2d9f6'
+data = ['When I visit Bath I will']
 
-args = {
-    'max_length':20
+kwargs = {
+    'max_length':15
 }
 
-output = npu.predict(model_id, data, args)
+output = npu.predict(model_id, data, kwargs)
 print(output)
