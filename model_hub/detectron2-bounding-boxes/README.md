@@ -6,6 +6,13 @@
 
 ### Model Description
 
+Detectron2 is Facebook AI Research's next generation library
+that provides state-of-the-art detection and segmentation algorithms.
+It is the successor of
+[Detectron](https://github.com/facebookresearch/Detectron/)
+and [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark/).
+It supports a number of computer vision research projects and production applications in Facebook.
+
 ### How to use it
 
 To use this model as an API you will need your API Token. You can find it in the homepage of Neuro's Dashboard. If you don't have a Neuro account, you can register in the [Neuro Dashboard](https://dashboard.getneuro.ai/) and upgrade your account to either Developer or Premium to be able to use this model inmediately.
