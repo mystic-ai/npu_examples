@@ -90,6 +90,9 @@
     "visionFilter": "Bounding Boxes",
     "tags": ["Bounding Boxes"],
     "predictionTime": 0.8,
-    "predictionDescription": "Avg time to compute 100 characters with GPT-2"
+    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "kwargs": {
+      "render_boxes": true
+    }
   }
 ]
