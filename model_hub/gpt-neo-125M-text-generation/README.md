@@ -21,7 +21,7 @@ import npu
 
 npu.api('API_TOKEN', deployed=True) # Change API_TOKEN with your personal API token
 
-model_id = '609d50cb8b6a667ad9b2d9f6'
+model_id = '60a40f81b635d67d627bf6b2'
 data = ['When I visit Bath I will']
 
 kwargs = {
