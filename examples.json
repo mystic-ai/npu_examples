@@ -19,7 +19,10 @@
     "tags": ["Fill Mask"],
     "predictionTime": 0.2,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "Have you seen my [MASK]?"
+    "defaultInput": "The river is [MASK].",
+    "kwargs": {
+      "top_k": 3
+    }
   },
   {
     "objectID": "3q847iubkjnrqh9iubnkj",
@@ -31,7 +34,7 @@
     "tags": ["Sentiment Analysis"],
     "predictionTime": 0.2,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "Birds are beautiful animals"
+    "defaultInput": "This is awesome"
   },
   {
     "objectID": "890ohijq43f98hounj",
@@ -43,7 +46,7 @@
     "tags": ["Question Answering"],
     "predictionTime": 0.2,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "Where is Ethiopia?"
+    "defaultInput": "Where was Nikola Tesla raised?"
   },
   {
     "objectID": "98ohiunqclk3woh8inlk",
@@ -55,7 +58,10 @@
     "tags": ["Text Generation"],
     "predictionTime": 0.8,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "My favourite animal is a narwhal because"
+    "defaultInput": "How old is Elon Musk?",
+    "kwargs": {
+      "number_of_tokens": 10
+    }
   },
   {
     "objectID": "pmoij089h78byiqvm",
@@ -67,7 +73,10 @@
     "tags": ["Text Generation"],
     "predictionTime": 0.2,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "One day, I hope to be"
+    "defaultInput": "When I visit Bath I will",
+    "kwargs": {
+      "max_length": 15
+    }
   },
   {
     "objectID": "f389oinlkfqoinlk",
@@ -79,7 +88,11 @@
     "tags": [["Translation"], ["multilingual"]],
     "predictionTime": 0.2,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "Are you going home today?"
+    "defaultInput": "The car is blue",
+    "kwargs": {
+      "from_lang": "en_XX",
+      "to_lang": "es_XX"
+    }
   },
   {
     "objectID": "q3f89oinlkoijlnkm9poijkl",
