@@ -16,3 +16,4 @@ detectron2/python/exp1.jpeg
 model_hub/vision/detectron2-bounding-boxes/bounding_boxes.py
 model_hub/vision/clip/test3.jpg
 model_hub/blank
+model_hub/deepspeech/js/node_modules
