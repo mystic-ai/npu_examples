@@ -30,7 +30,7 @@
     "name": "DistilBERT",
     "path": "/distilbert-base-uncased-classification",
     "category": "NLP",
-    "nlpFilter": "Classification",
+    "nlpFilter": "Sentiment Analysis",
     "tags": ["Sentiment Analysis"],
     "predictionTime": 0.12,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute DistilBERT for sentiment analysis",
