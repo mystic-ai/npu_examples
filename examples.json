@@ -46,7 +46,10 @@
     "tags": ["Question Answering"],
     "predictionTime": 0.2,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "Where was Nikola Tesla raised?"
+    "defaultInput": "Where was Nikola Tesla raised?",
+    "kwargs": {
+      "questions": ["Where was Nikola Tesla raised?"]
+    }
   },
   {
     "objectID": "98ohiunqclk3woh8inlk",
