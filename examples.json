@@ -54,7 +54,7 @@
   {
     "objectID": "98ohiunqclk3woh8inlk",
     "model_id": "",
-    "name": "gpt-2-text-generation",
+    "name": "GPT2",
     "path": "/gpt-2-text-generation",
     "category": "NLP",
     "nlpFilter": "Text Generation",
@@ -100,7 +100,7 @@
   {
     "objectID": "q3f89oinlkoijlnkm9poijkl",
     "model_id": "609e7716b635d67d627be711",
-    "name": "detectron2-bounding-boxes",
+    "name": "Detectron2",
     "path": "/detectron2-bounding-boxes",
     "category": "Vision",
     "visionFilter": "Bounding Boxes",
