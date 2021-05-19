@@ -2,11 +2,11 @@ import npu
 
 npu.api('API_TOKEN', deployed=True)
 
-model_id = '609d62068b6a667ad9b2da20'
+model_id = '60a3c2a00421e5d2d7053ab9'
 data = ["The river is [MASK]."]
 
 kwargs = {
-    'top_k':3,
+    'top_k':3, # How many predictions do you want
 }
 
 output = npu.predict(model_id, data, kwargs)

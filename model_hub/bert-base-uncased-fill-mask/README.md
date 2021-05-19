@@ -2,7 +2,7 @@
 
 #### Tags
 
-['Fill-Mask']
+> ['Fill-Mask']
 
 ### Model Description
 
@@ -28,7 +28,7 @@ import npu
 
 npu.api('API_TOKEN', deployed=True) # Change API_TOKEN with your personal API token
 
-model_id = '609d62068b6a667ad9b2da20'
+model_id = '60a3c2a00421e5d2d7053ab9'
 
 data = ["The river is [MASK]."]
 
