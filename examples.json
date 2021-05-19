@@ -78,5 +78,15 @@
     "visionFilter": "Bounding Boxes",
     "tags": ["Bounding Boxes"],
     "predictionTime": 0.8
+  },
+  {
+    "objectID": "uinj3487ubinj3qf98unoj",
+    "model_id": "60a50d0fbcfe327d47f4127a",
+    "name": "T5",
+    "path": "/t5",
+    "category": "NLP",
+    "nlpFilter": "Summarization",
+    "tags": ["Summarization"],
+    "predictionTime": "1.5"
   }
 ]
