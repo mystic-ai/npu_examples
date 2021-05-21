@@ -101,8 +101,8 @@
     "name": "Detectron2",
     "path": "/detectron2-bounding-boxes",
     "category": "Vision",
-    "visionFilter": "Bounding Boxes",
-    "tags": ["Bounding Boxes"],
+    "visionFilter": "Object Recognition",
+    "tags": ["Object Recognition"],
     "predictionTime": 0.8,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
     "kwargs": {
