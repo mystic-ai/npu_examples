@@ -32,7 +32,7 @@
     "name": "DistilBERT",
     "path": "/distilbert-base-uncased-question-answering",
     "category": "NLP",
-    "nlpfilter": "Question Answering",
+    "nlpFilter": "Question Answering",
     "tags": ["Question Answering"],
     "predictionTime": 0.22,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute DistilBERT for question-answering",
