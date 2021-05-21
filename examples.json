@@ -51,7 +51,7 @@
   },
   {
     "objectID": "98ohiunqclk3woh8inlk",
-    "model_id": "",
+    "model_id": "60a7b5224ae13749d81605a0",
     "name": "GPT2",
     "path": "/gpt-2-text-generation",
     "category": "NLP",
@@ -59,7 +59,7 @@
     "tags": ["Text Generation"],
     "predictionTime": 0.8,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "How old is Elon Musk?",
+    "defaultInput": "Hello, my name is",
     "kwargs": {
       "number_of_tokens": 10
     }
