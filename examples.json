@@ -1,15 +1,5 @@
 [
   {
-    "objectID": "qo38f7iyuhbjq98nolk",
-    "model_id": "",
-    "name": "bart-large-cnn-summarization",
-    "path": "/bart-large-cnn-summarization",
-    "category": "NLP",
-    "nlpFilter": "Summarization",
-    "tags": ["Summarization"],
-    "predictionTime": 0.8
-  },
-  {
     "objectID": "qw48of7igubkjqf398ohiubn",
     "model_id": "60a3c2a00421e5d2d7053ab9",
     "name": "BERT",
@@ -97,8 +87,8 @@
     "category": "NLP",
     "nlpFilter": "Translation",
     "tags": [["Translation"], ["multilingual"]],
-    "predictionTime": 0.2,
-    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "predictionTime": 0.7,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to translate 30 words with MBart large",
     "defaultInput": "The car is blue",
     "kwargs": {
       "from_lang": "en_XX",
