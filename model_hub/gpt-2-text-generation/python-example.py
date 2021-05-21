@@ -4,9 +4,9 @@ import numpy as np
 
 npu.api(os.environ['API_TOKEN'], deployed=True)
 
-input = "How old is Elon Musk?"
+input = "Hello my name is"
 
-output = npu.predict("607c6efde90b1357d1d08059", 
+output = npu.predict("60a7b5224ae13749d81605a0", 
     [[input]], 
     input_kwargs={
         "number_of_tokens" : 10,
