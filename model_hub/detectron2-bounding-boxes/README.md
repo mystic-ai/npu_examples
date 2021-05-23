@@ -1,8 +1,8 @@
-# Detectron2 for Bounding Boxes
+# Detectron2 for Object Recognition
 
 #### Tags
 
-> ['Bounding Boxes']
+> ['Object Recognition']
 
 ### Model Description
 

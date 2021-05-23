@@ -1,1 +1,1 @@
-# Detectron2 for Bounding Boxes
+# Detectron2 for Object Recognition
