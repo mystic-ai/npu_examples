@@ -9,10 +9,29 @@
     "tags": ["Fill Mask"],
     "predictionTime": 0.13,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute BERT for fill-mask",
-    "defaultInput": "The river is [MASK].",
-    "kwargs": {
-      "top_k": 2
-    }
+    "inputs": [
+      {
+        "input_type": "number",
+        "input_as_kwarg": true,
+        "kwarg_name": "top_k",
+        "hidden": true,
+        "default": 2
+      },
+      {
+        "input_type": "text",
+        "default": "The river is [MASK]."
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "sequence"
+      },
+      {
+        "output_type": "text",
+        "name": "sequence"
+      }
+    ]
   },
   {
     "objectID": "3q847iubkjnrqh9iubnkj",
@@ -24,7 +43,26 @@
     "tags": ["Sentiment Analysis"],
     "predictionTime": 0.12,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute DistilBERT for sentiment analysis",
-    "defaultInput": "This is awesome"
+    "inputs": [
+      {
+        "input_type": "text",
+        "default": "This is awesome"
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "progress",
+        "name": "score",
+        "label": "label",
+        "display_label": true
+      },
+      {
+        "output_type": "progress",
+        "name": "score",
+        "label": "label",
+        "display_label": true
+      }
+    ]
   },
   {
     "objectID": "890ohijq43f98hounj",
@@ -36,16 +74,27 @@
     "tags": ["Question Answering"],
     "predictionTime": 0.22,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute DistilBERT for question-answering",
-    "defaultInput": "Nikola Tesla was born an ethnic Serb in the village of Smiljan, within the Military Frontier, in the Austrian Empire (present day Croatia), on 10 July [O.S. 28 June] 1856.[13][14] His father, Milutin Tesla (1819–1879),[15] was an Eastern Orthodox priest.[16][17][18][19] Tesla's mother, Đuka Mandić (1822–1892), whose father was also an Orthodox priest,[20] had a talent for making home craft tools and mechanical appliances and the ability to memorize Serbian epic poems. Đuka had never received a formal education. Tesla credited his eidetic memory and creative abilities to his mother's genetics and influence.[21][22] Tesla's progenitors were from western Serbia, near Montenegro.[23] Tesla was the fourth of five children. He had three sisters, Milka, Angelina and Marica, and an older brother named Dane, who was killed in a horse riding accident when Tesla was aged five.[24] In 1861, Tesla attended primary school in Smiljan where he studied German, arithmetic, and religion.[25] In 1862, the Tesla family moved to the nearby Gospić, where Tesla's father worked as parish priest. Nikola completed primary school, followed by middle school.[25] In 1870, Tesla moved to Karlovac[26] to attend high school at the Higher Real Gymnasium where the classes were held in German, as it was usual throughout schools within the Austro-Hungarian Military Frontier.[27] Tesla's father, Milutin, was an Orthodox priest in the village of Smiljan. Tesla later wrote that he became interested in demonstrations of electricity by his physics professor.[28] Tesla noted that these demonstrations of this \"mysterious phenomena\" made him want \"to know more of this wonderful force\".[29] Tesla was able to perform integral calculus in his head, which prompted his teachers to believe that he was cheating.[30] He finished a four-year term in three years, graduating in 1873.[31]In 1873, Tesla returned to Smiljan. Shortly after he arrived, he contracted cholera, was bedridden for nine months and was near death multiple times. Tesla's father, in a moment of despair, (who had originally wanted him to enter the priesthood)[32] promised to send him to the best engineering school if he recovered from the illness.",
-    "kwargs": {
-      "questions": ["What was the major event that happened to Nikola Tesla?"]
-    },
+
     "inputs": [
       {
         "input_type": "text",
-        "kwargs": true,
-        "name": "questions",
+        "input_as_kwarg": true,
+        "kwarg_name": "questions",
+        "name": "Question",
         "default": "What was the major event that happened to Nikola Tesla?"
+      },
+      {
+        "input_type": "textarea",
+        "input_as_kwarg": false,
+        "display_name": true,
+        "name": "Context",
+        "default": "Nikola Tesla was born an ethnic Serb in the village of Smiljan, within the Military Frontier, in the Austrian Empire (present day Croatia), on 10 July [O.S. 28 June] 1856.[13][14] His father, Milutin Tesla (1819–1879),[15] was an Eastern Orthodox priest.[16][17][18][19] Tesla's mother, Đuka Mandić (1822–1892), whose father was also an Orthodox priest,[20] had a talent for making home craft tools and mechanical appliances and the ability to memorize Serbian epic poems. Đuka had never received a formal education. Tesla credited his eidetic memory and creative abilities to his mother's genetics and influence.[21][22] Tesla's progenitors were from western Serbia, near Montenegro.[23] Tesla was the fourth of five children. He had three sisters, Milka, Angelina and Marica, and an older brother named Dane, who was killed in a horse riding accident when Tesla was aged five.[24] In 1861, Tesla attended primary school in Smiljan where he studied German, arithmetic, and religion.[25] In 1862, the Tesla family moved to the nearby Gospić, where Tesla's father worked as parish priest. Nikola completed primary school, followed by middle school.[25] In 1870, Tesla moved to Karlovac[26] to attend high school at the Higher Real Gymnasium where the classes were held in German, as it was usual throughout schools within the Austro-Hungarian Military Frontier.[27] Tesla's father, Milutin, was an Orthodox priest in the village of Smiljan. Tesla later wrote that he became interested in demonstrations of electricity by his physics professor.[28] Tesla noted that these demonstrations of this \"mysterious phenomena\" made him want \"to know more of this wonderful force\".[29] Tesla was able to perform integral calculus in his head, which prompted his teachers to believe that he was cheating.[30] He finished a four-year term in three years, graduating in 1873.[31]In 1873, Tesla returned to Smiljan. Shortly after he arrived, he contracted cholera, was bedridden for nine months and was near death multiple times. Tesla's father, in a moment of despair, (who had originally wanted him to enter the priesthood)[32] promised to send him to the best engineering school if he recovered from the illness."
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "answer"
       }
     ]
   },
@@ -59,10 +108,30 @@
     "tags": ["Text Generation"],
     "predictionTime": 0.8,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "defaultInput": "Hello, my name is",
-    "kwargs": {
-      "number_of_tokens": 10
-    }
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "Hello my name is"
+      },
+      {
+        "input_type": "number",
+        "hidden": false,
+        "input_as_kwarg": true,
+        "display_name": true,
+        "kwarg_name": "number_of_tokens",
+        "name": "New tokens (words/punctuation)",
+        "default": 10,
+        "max": 50,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text"
+      }
+    ]
   },
   {
     "objectID": "pmoij089h78byiqvm",
@@ -74,10 +143,29 @@
     "tags": ["Text Generation"],
     "predictionTime": 0.27,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
-    "defaultInput": "When I visit Bath I will",
-    "kwargs": {
-      "max_length": 15
-    }
+
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "When I visit Bath I will"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "max_length",
+        "default": 15,
+        "max": 50,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text"
+      }
+    ]
   },
   {
     "objectID": "f389oinlkfqoinlk",
@@ -89,11 +177,33 @@
     "tags": [["Translation"], ["multilingual"]],
     "predictionTime": 0.7,
     "predictionDescription": "Avg. time (s) a GPU is allocated to translate 30 words with MBart large",
-    "defaultInput": "The car is blue",
-    "kwargs": {
-      "from_lang": "en_XX",
-      "to_lang": "es_XX"
-    }
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "The car is blue"
+      },
+      {
+        "input_type": "text",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "from_lang",
+        "default": "en_XX"
+      },
+      {
+        "input_type": "text",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "to_lang",
+        "default": "es_XX"
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "translated_text"
+      }
+    ]
   },
   {
     "objectID": "q3f89oinlkoijlnkm9poijkl",
@@ -105,9 +215,25 @@
     "tags": ["Object Recognition"],
     "predictionTime": 0.8,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-    "kwargs": {
-      "render_image": true
-    }
+
+    "inputs": [
+      {
+        "input_type": "image"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "render_image",
+        "default": 1
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "image",
+        "name": "image"
+      }
+    ]
   },
   {
     "objectID": "uinj3487ubinj3qf98unoj",
@@ -118,6 +244,41 @@
     "nlpFilter": "Summarization",
     "tags": ["Summarization"],
     "predictionTime": "1.5",
-    "defaultInput": "President Donald Trump's physician, Navy Cmdr Dr. Sean Conley, held a second medical briefing that again raised more questions than answers about the President's condition.In another jarring news conference on Sunday, Trump's doctors said that even though the President has had at least two concerning drops in oxygen levels, they are hoping he could be discharged as early as tomorrow from Walter Reed National Military Medical Center.Conley and other doctors involved in the President's care offered some more information about the President's condition -- but there were still significant gaps that made it hard to decipher the full picture.Conley failed to answer basic questions about the President's condition and admitted that he had omitted those alarming drops in the President's oxygen levels during a news conference Saturday because he wanted to \"reflect the upbeat attitude\" that the team and the President had about his condition and didn't want \"to give any information that might steer the course of illness in another direction.\"Conley acknowledged that his evasive answers \"came off that we were trying to hide something\" but said that \"wasn't necessarily true,\" adding that the President is \"doing really well\" and is responding to treatment.During the briefing Sunday, Conley acknowledged that the President has experienced \"two episodes of transient drops in his oxygen saturation\" and said the team debated the reasons for that and whether to intervene. He said the President was given supplemental oxygen and has also been treated with the steroid dexamethasone, and his current blood oxygen level is 98%.But Conley refused to say how low the President's blood oxygen levels had dropped. When asked if they had dropped below 90, he replied, \"We don't have any recordings here of that.\" Pressed again on whether they had dropped below 90, Conley said the President's blood oxygen levels didn't get down into \"the low 80s.\"He offered no detail about what X-rays or CT scans have shown about whether there has been any damage to the President's lungs.\"There's some expected findings, but nothing of any major clinical concern,\" Conley said, not explaining whether they were expected findings in a normal patient or a Covid-19 patient.Some seven months into a pandemic that has killed more than 209,000 Americans, the nation is now facing a grave governing crisis with its commander in chief hospitalized -- his condition hinging on his progress over the coming days -- as the White House events of the past week serve as a textbook example of how not to handle a deadly virus"
+
+    "inputs": [
+      {
+        "input_type": "textarea",
+        "name": "Text",
+        "default": "President Donald Trump's physician, Navy Cmdr Dr. Sean Conley, held a second medical briefing that again raised more questions than answers about the President's condition.In another jarring news conference on Sunday, Trump's doctors said that even though the President has had at least two concerning drops in oxygen levels, they are hoping he could be discharged as early as tomorrow from Walter Reed National Military Medical Center.Conley and other doctors involved in the President's care offered some more information about the President's condition -- but there were still significant gaps that made it hard to decipher the full picture.Conley failed to answer basic questions about the President's condition and admitted that he had omitted those alarming drops in the President's oxygen levels during a news conference Saturday because he wanted to \"reflect the upbeat attitude\" that the team and the President had about his condition and didn't want \"to give any information that might steer the course of illness in another direction.\"Conley acknowledged that his evasive answers \"came off that we were trying to hide something\" but said that \"wasn't necessarily true,\" adding that the President is \"doing really well\" and is responding to treatment.During the briefing Sunday, Conley acknowledged that the President has experienced \"two episodes of transient drops in his oxygen saturation\" and said the team debated the reasons for that and whether to intervene. He said the President was given supplemental oxygen and has also been treated with the steroid dexamethasone, and his current blood oxygen level is 98%.But Conley refused to say how low the President's blood oxygen levels had dropped. When asked if they had dropped below 90, he replied, \"We don't have any recordings here of that.\" Pressed again on whether they had dropped below 90, Conley said the President's blood oxygen levels didn't get down into \"the low 80s.\"He offered no detail about what X-rays or CT scans have shown about whether there has been any damage to the President's lungs.\"There's some expected findings, but nothing of any major clinical concern,\" Conley said, not explaining whether they were expected findings in a normal patient or a Covid-19 patient.Some seven months into a pandemic that has killed more than 209,000 Americans, the nation is now facing a grave governing crisis with its commander in chief hospitalized -- his condition hinging on his progress over the coming days -- as the White House events of the past week serve as a textbook example of how not to handle a deadly virus"
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text"
+      }
+    ]
+  },
+  {
+    "objectID": "87hyq34f87gyhiu3b4fgyi",
+    "model_id": "",
+    "name": "Video_Test",
+    "path": "/video_test",
+    "category": "Vision",
+    "visionFilter": "Video",
+    "tags": ["Video"],
+    "predictionTime": 1.5,
+    "predictionDescription": "Avg time to compute a frame",
+    "inputs": [
+      {
+        "input_type": "video",
+        "name": "Video"
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "video",
+        "name": "video"
+      }
+    ]
   }
 ]
