@@ -7,6 +7,7 @@
     "category": "NLP",
     "nlpFilter": "Fill Mask",
     "tags": ["Fill Mask"],
+    "samples": ["Python", "JavaScript", "cURL"],
     "predictionTime": 0.13,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute BERT for fill-mask",
     "inputs": [
@@ -41,6 +42,7 @@
     "category": "NLP",
     "nlpFilter": "Sentiment Analysis",
     "tags": ["Sentiment Analysis"],
+    "samples": ["Python", "JavaScript", "cURL"],
     "predictionTime": 0.12,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute DistilBERT for sentiment analysis",
     "inputs": [
@@ -72,6 +74,7 @@
     "category": "NLP",
     "nlpFilter": "Question Answering",
     "tags": ["Question Answering"],
+    "samples": ["Python", "JavaScript"],
     "predictionTime": 0.22,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute DistilBERT for question-answering",
 
@@ -106,6 +109,7 @@
     "category": "NLP",
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
+    "samples": ["Python", "JavaScript", "cURL"],
     "predictionTime": 0.8,
     "predictionDescription": "Avg time to compute 100 characters with GPT-2",
     "inputs": [
@@ -141,6 +145,7 @@
     "category": "NLP",
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
+    "samples": ["Python", "JavaScript", "cURL"],
     "predictionTime": 0.27,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
 
@@ -168,44 +173,6 @@
     ]
   },
   {
-    "objectID": "f389oinlkfqoinlk",
-    "model_id": "609d45f40421e5d2d7053349",
-    "name": "MBart large",
-    "path": "/mbart-large-50-multi-translation",
-    "category": "NLP",
-    "nlpFilter": "Translation",
-    "tags": [["Translation"], ["multilingual"]],
-    "predictionTime": 0.7,
-    "predictionDescription": "Avg. time (s) a GPU is allocated to translate 30 words with MBart large",
-    "inputs": [
-      {
-        "input_type": "text",
-        "name": "Text",
-        "default": "The car is blue"
-      },
-      {
-        "input_type": "text",
-        "hidden": true,
-        "input_as_kwarg": true,
-        "kwarg_name": "from_lang",
-        "default": "en_XX"
-      },
-      {
-        "input_type": "text",
-        "hidden": true,
-        "input_as_kwarg": true,
-        "kwarg_name": "to_lang",
-        "default": "es_XX"
-      }
-    ],
-    "outputs": [
-      {
-        "output_type": "text",
-        "name": "translated_text"
-      }
-    ]
-  },
-  {
     "objectID": "q3f89oinlkoijlnkm9poijkl",
     "model_id": "609e7716b635d67d627be711",
     "name": "Detectron2",
@@ -215,7 +182,7 @@
     "tags": ["Object Recognition"],
     "predictionTime": 3.5,
     "predictionDescription": "Avg time to compute an image",
-
+    "samples": ["Python"],
     "inputs": [
       {
         "input_type": "image"
@@ -245,6 +212,8 @@
     "tags": ["Summarization"],
     "predictionTime": "1.75",
     "predictionDescription": "Avg time to compute 400 words (2595 chars)",
+    "samples": ["Python"],
+
     "inputs": [
       {
         "input_type": "textarea",
