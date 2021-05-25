@@ -213,8 +213,8 @@
     "category": "Vision",
     "visionFilter": "Object Recognition",
     "tags": ["Object Recognition"],
-    "predictionTime": 0.8,
-    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
+    "predictionTime": 3.5,
+    "predictionDescription": "Avg time to compute an image",
 
     "inputs": [
       {
@@ -243,8 +243,8 @@
     "category": "NLP",
     "nlpFilter": "Summarization",
     "tags": ["Summarization"],
-    "predictionTime": "1.5",
-
+    "predictionTime": "1.75",
+    "predictionDescription": "Avg time to compute 400 words (2595 chars)",
     "inputs": [
       {
         "input_type": "textarea",
