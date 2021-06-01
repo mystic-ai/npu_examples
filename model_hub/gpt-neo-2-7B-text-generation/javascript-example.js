@@ -8,7 +8,7 @@ fetch("https://api.neuro-ai.co.uk/SyncPredict?include_result=true", {
     Authorization: `Bearer ${API_TOKEN}`,
   },
   body: JSON.stringify({
-    modelId: "60a40f81b635d67d627bf6b2",
+    modelId: "60b6578da4585d36792e32f9",
     data: ["When I visit Bath I will"],
     input_kwargs: { max_length: 15 },
   }),

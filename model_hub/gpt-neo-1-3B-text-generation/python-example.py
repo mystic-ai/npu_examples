@@ -3,7 +3,7 @@ import npu
 
 npu.api(os.environ["API_TOKEN"], deployed=True)
 
-model_id = '60a40f81b635d67d627bf6b2'
+model_id = '60b65641cb49710df3af4866'
 data = ['When I visit Bath I will']
 
 kwargs = {

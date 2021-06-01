@@ -1,4 +1,4 @@
-# GPT-Neo-125M
+# GPT-Neo-2.7B
 
 #### Tags
 
@@ -6,7 +6,7 @@
 
 ### Model Description
 
-GPT-Neo 125M is a transformer model designed using EleutherAI's replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 125M represents the number of parameters of this particular pre-trained model.
+GPT-Neo 2.7B is a transformer model designed using EleutherAI's replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 2.7B represents the number of parameters of this particular pre-trained model.
 
 ### How to use it
 
@@ -21,7 +21,7 @@ import npu
 
 npu.api('API_TOKEN', deployed=True) # Change API_TOKEN with your personal API token
 
-model_id = '60a40f81b635d67d627bf6b2'
+model_id = '60b6578da4585d36792e32f9'
 data = ['When I visit Bath I will']
 
 kwargs = {
