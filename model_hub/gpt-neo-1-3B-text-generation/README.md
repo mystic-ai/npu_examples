@@ -25,7 +25,9 @@ model_id = '60b65641cb49710df3af4866'
 data = ['When I visit Bath I will']
 
 kwargs = {
-    'max_length':15 # How many generated tokens you want
+    'max_length':15 # How many generated tokens you want [Int]
+    'remove_input': True # Remove input text from predicted text (Default: False) [Bool]
+    'penalty': 1.0 # Define penalty for repeated words, value close to 0 will highly repeat generated output (Default: 1.0) [Float]
 }
 
 output = npu.predict(model_id, data, kwargs)
