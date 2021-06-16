@@ -6,7 +6,7 @@
 
 ### Model Description
 
-GPT-J-6B is a transformer model created by Ben Wang and Aran Komatsuzaki and the team at EleutherAI. GPT-J-6B performs nearly on par with 6.7B GPT-3 (or Curie) on various zero-shot down-streaming tasks.
+GPT-J-6B is a transformer [model](https://github.com/kingoflolz/mesh-transformer-jax) created by Ben Wang and Aran Komatsuzaki and the team at EleutherAI. GPT-J-6B performs nearly on par with 6.7B GPT-3 (or Curie) on various zero-shot down-streaming tasks.
 
 ### How to use it
 
