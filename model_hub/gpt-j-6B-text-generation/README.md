@@ -6,9 +6,7 @@
 
 ### Model Description
 
-GPT-J-6B is a transformer model created by Ben Wang and Aran Komatsuzaki from EleutherAI. GPT-J-6B performs nearly on par with 6.7B GPT-3 (or Curie) on various zero-shot down-streaming tasks.
-
-GPT-Neo 125M is a transformer model designed using EleutherAI's replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 125M represents the number of parameters of this particular pre-trained model.
+GPT-J-6B is a transformer model created by Ben Wang and Aran Komatsuzaki and the team at EleutherAI. GPT-J-6B performs nearly on par with 6.7B GPT-3 (or Curie) on various zero-shot down-streaming tasks.
 
 ### How to use it
 
@@ -45,27 +43,24 @@ If you run the script above, in your terminal you will see a similar output to t
 [{'generated_text': 'When I visit Bath I will drive out of my home and spend the next'}]
 ```
 
-### Training Procedure
+### Performance
 
-This model was trained for 400,000 steps on the Pile. It was trained as a masked autoregressive language model, using cross-entropy loss.
+The zero-shot performance is roughly on par with GPT-3 of comparable size, and the performance gap from GPT-3 of comparable size is closer than the GPT-Neo models.
 
-### Limitations and Biases
-
-GPT-Neo was trained as an autoregressive language model. This means that its core functionality is taking a string of text and predicting the next token. While language models are widely used for tasks other than this, there are a lot of unknowns with this work.
-
-GPT-Neo was trained on the Pile, a dataset known to contain profanity, lewd, and otherwise abrasive language. Depending on your usecase GPT-Neo may produce socially unacceptable text. See Sections 5 and 6 of the Pile paper for a more detailed analysis of the biases in the Pile.
-
-As with all language models, it is hard to predict in advance how GPT-Neo will respond to particular prompts and offensive content may occur without warning. We recommend having a human curate or filter the outputs before releasing them, both to censor undesirable content and to improve the quality of the results.
+<p class="aligncenter">
+    <img src="https://arankomatsuzaki.files.wordpress.com/2021/06/gptj-table.png" width="auto" >
+</p>
 
 ### BibTeX and Citation
 
-This model was built by EleutherAI under MIT License. Neuro provides instant infrastructure to allow access to their pre-trained model. Further information about the model has been extracted from HuggingFace's open-source model repository.
+More information regarding the model and how it's been trained by the authors can be found [here](https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/). Neuro provides instant infrastructure to allow access to their pre-trained model.
 
 ```bibtex
-@article{gao2020pile,
-  title={The Pile: An 800GB Dataset of Diverse Text for Language Modeling},
-  author={Gao, Leo and Biderman, Stella and Black, Sid and Golding, Laurence and Hoppe, Travis and Foster, Charles and Phang, Jason and He, Horace and Thite, Anish and Nabeshima, Noa and others},
-  journal={arXiv preprint arXiv:2101.00027},
-  year={2020}
+@misc{gpt-j,
+  author = {Wang, Ben and Komatsuzaki, Aran},
+  title = {{GPT-J-6B: A 6 Billion Parameter Autoregressive Language Model}},
+  howpublished = {\url{https://github.com/kingoflolz/mesh-transformer-jax}},
+  year = 2021,
+  month = May
 }
 ```
