@@ -216,7 +216,7 @@
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 0.27,
+    "predictionTime": 3,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 20 tokens with GPT J",
 
     "inputs": [
