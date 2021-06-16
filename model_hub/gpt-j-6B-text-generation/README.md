@@ -53,7 +53,7 @@ The zero-shot performance is roughly on par with GPT-3 of comparable size, and t
 
 ### BibTeX and Citation
 
-More information regarding the model and how it's been trained by the authors can be found [here](https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/). Neuro provides instant infrastructure to allow access to their pre-trained model.
+More information regarding the model and how it's been trained by the authors can be found [here](https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/). Neuro provides instant infrastructure to allow access to their trained model.
 
 ```bibtex
 @misc{gpt-j,
