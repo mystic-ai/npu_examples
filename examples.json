@@ -230,7 +230,7 @@
         "hidden": false,
         "input_as_kwarg": true,
         "display_name": true,
-        "kwarg_name": "number_of_tokens",
+        "kwarg_name": "max_length",
         "name": "New tokens (words/punctuation)",
         "default": 10,
         "max": 50,
