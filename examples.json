@@ -208,6 +208,41 @@
     ]
   },
   {
+    "objectID": "bgfhbgdfxbfgb",
+    "model_id": "60b65641cb49710df3af4866",
+    "name": "GPT-J 6B",
+    "path": "/gpt-j-6B-text-generation",
+    "category": "NLP",
+    "nlpFilter": "Text Generation",
+    "tags": ["Text Generation"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 0.27,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 20 tokens with GPT J",
+
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "When I visit Bath I will"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "max_length",
+        "default": 15,
+        "max": 50,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text"
+      }
+    ]
+  },
+  {
     "objectID": "nhfnfdgzfdart",
     "model_id": "60b6578da4585d36792e32f9",
     "name": "GPT Neo 2.7B",
