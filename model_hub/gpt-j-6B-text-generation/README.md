@@ -53,7 +53,9 @@ The zero-shot performance is roughly on par with GPT-3 of comparable size, and t
 
 ### BibTeX and Citation
 
-More information regarding the model and how it's been trained by the authors can be found [here](https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/). Neuro provides instant infrastructure to allow access to their trained model.
+More information regarding the model and how it's been trained by the authors can be found [here](https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/). The original model can be found [here](https://github.com/kingoflolz/mesh-transformer-jax). Thanks to @finetuneanon for his support on translating the model to work on GPU and half precision.
+
+Neuro provides instant infrastructure to allow access to their trained model.
 
 ```bibtex
 @misc{gpt-j,
