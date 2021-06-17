@@ -47,9 +47,7 @@ If you run the script above, in your terminal you will see a similar output to t
 
 The zero-shot performance is roughly on par with GPT-3 of comparable size, and the performance gap from GPT-3 of comparable size is closer than the GPT-Neo models.
 
-<p class="aligncenter">
-    <img src="https://arankomatsuzaki.files.wordpress.com/2021/06/gptj-table.png" width="auto" >
-</p>
+![gptj table](https://arankomatsuzaki.files.wordpress.com/2021/06/gptj-table.png)
 
 ### BibTeX and Citation
 
