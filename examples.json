@@ -365,8 +365,8 @@
     "outputs": [
       {
         "output_type": "text",
-        "name": "generated_text"
+        "name": "generated_text_with_special_tokens"
       }
     ]
-  },
+  }
 ]
