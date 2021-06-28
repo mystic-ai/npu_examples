@@ -146,7 +146,7 @@
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 0.27,
+    "predictionTime": 0.3,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
 
     "inputs": [
@@ -181,7 +181,7 @@
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 0.27,
+    "predictionTime": 0.6,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
 
     "inputs": [
@@ -216,7 +216,7 @@
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 3,
+    "predictionTime": 1.5,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 20 tokens with GPT J",
 
     "inputs": [
@@ -253,7 +253,7 @@
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 0.27,
+    "predictionTime": 0.8,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
 
     "inputs": [
@@ -317,7 +317,7 @@
     "category": "NLP",
     "nlpFilter": "Summarization",
     "tags": ["Summarization"],
-    "predictionTime": "1.75",
+    "predictionTime": 1.75,
     "predictionDescription": "Avg time to compute 400 words (2595 chars)",
     "samples": ["Python"],
 
@@ -331,6 +331,41 @@
     "outputs": [
       {
         "output_type": "text"
+      }
+    ]
+  },
+  {
+    "objectID": "3fg78iuybhkf3q4wdfsf",
+    "model_id": "60d1d2f1861efa57850507a7",
+    "name": "DialoGPT",
+    "path": "/dialogpt-large",
+    "category": "NLP",
+    "nlpFilter": "Conversation",
+    "tags": ["Conversation"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 0.5,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
+
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "Hello how are you?"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "max_length",
+        "default": 20,
+        "max": 50,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text_with_special_tokens"
       }
     ]
   }
