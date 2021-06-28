@@ -357,8 +357,8 @@
         "hidden": true,
         "input_as_kwarg": true,
         "kwarg_name": "max_length",
-        "default": 20,
-        "max": 50,
+        "default": 1000,
+        "max": 2000,
         "min": 0
       }
     ],
