@@ -27,10 +27,6 @@
       {
         "output_type": "text",
         "name": "sequence"
-      },
-      {
-        "output_type": "text",
-        "name": "sequence"
       }
     ]
   },
@@ -263,6 +259,43 @@
     "outputs": [
       {
         "output_type": "text"
+      }
+    ]
+  },
+  {
+    "objectID": "bgfhvbdxbfgb",
+    "model_id": "60ca2a1e54f6ecb69867c72c",
+    "name": "GPT-J 6B",
+    "path": "/gpt-j-6B-text-generation",
+    "category": "NLP",
+    "nlpFilter": "Text Generation",
+    "tags": ["Text Generation"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 1.5,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 20 tokens with GPT J",
+
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "When I visit Bath I will"
+      },
+      {
+        "input_type": "number",
+        "hidden": false,
+        "input_as_kwarg": true,
+        "display_name": true,
+        "kwarg_name": "max_length",
+        "name": "New tokens (words/punctuation)",
+        "default": 10,
+        "max": 50,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text"
       }
     ]
   },

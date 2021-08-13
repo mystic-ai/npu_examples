@@ -27,10 +27,6 @@
       {
         "output_type": "text",
         "name": "sequence"
-      },
-      {
-        "output_type": "text",
-        "name": "sequence"
       }
     ]
   },
