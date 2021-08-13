@@ -16,7 +16,7 @@
         "input_as_kwarg": true,
         "kwarg_name": "top_k",
         "hidden": true,
-        "default": 2
+        "default": 1
       },
       {
         "input_type": "text",
@@ -142,7 +142,7 @@
     "nlpFilter": "Text Generation",
     "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 0.27,
+    "predictionTime": 0.3,
     "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
 
     "inputs": [
@@ -169,96 +169,37 @@
     ]
   },
   {
-    "objectID": "f389oinlkfqoinlk",
-    "model_id": "609d45f40421e5d2d7053349",
-    "name": "MBart large",
-    "path": "/mbart-large-50-multi-translation",
+    "objectID": "bgfhbgdfxbfgb",
+    "model_id": "60b65641cb49710df3af4866",
+    "name": "GPT Neo 1.3B",
+    "path": "/gpt-neo-1-3B-text-generation",
     "category": "NLP",
-    "nlpFilter": "Translation",
-    "tags": [["Translation"], ["multilingual"]],
+    "nlpFilter": "Text Generation",
+    "tags": ["Text Generation"],
     "samples": ["Python", "JavaScript", "cURL"],
-    "predictionTime": 0.7,
-    "predictionDescription": "Avg. time (s) a GPU is allocated to translate 30 words with MBart large",
+    "predictionTime": 0.6,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
+
     "inputs": [
       {
         "input_type": "text",
         "name": "Text",
-        "default": "The car is blue"
-      },
-      {
-        "input_type": "text",
-        "hidden": true,
-        "input_as_kwarg": true,
-        "kwarg_name": "from_lang",
-        "default": "en_XX"
-      },
-      {
-        "input_type": "text",
-        "hidden": true,
-        "input_as_kwarg": true,
-        "kwarg_name": "to_lang",
-        "default": "es_XX"
-      }
-    ],
-    "outputs": [
-      {
-        "output_type": "text",
-        "name": "translated_text"
-      }
-    ]
-  },
-  {
-    "objectID": "q3f89oinlkoijlnkm9poijkl",
-    "model_id": "609e7716b635d67d627be711",
-    "name": "Detectron2",
-    "path": "/detectron2-bounding-boxes",
-    "category": "Vision",
-    "visionFilter": "Object Recognition",
-    "tags": ["Object Recognition"],
-    "samples": ["Python"],
-    "predictionTime": 0.8,
-    "predictionDescription": "Avg time to compute 100 characters with GPT-2",
-
-    "inputs": [
-      {
-        "input_type": "image"
+        "default": "When I visit Bath I will"
       },
       {
         "input_type": "number",
         "hidden": true,
         "input_as_kwarg": true,
-        "kwarg_name": "render_image",
-        "default": 1
+        "kwarg_name": "max_length",
+        "default": 15,
+        "max": 50,
+        "min": 0
       }
     ],
     "outputs": [
       {
-        "output_type": "image",
-        "name": "image"
-      }
-    ]
-  },
-  {
-    "objectID": "uinj3487ubinj3qf98unoj",
-    "model_id": "60a50d0fbcfe327d47f4127a",
-    "name": "T5",
-    "path": "/t5",
-    "category": "NLP",
-    "nlpFilter": "Summarization",
-    "tags": ["Summarization"],
-    "samples": ["Python"],
-    "predictionTime": "1.5",
-
-    "inputs": [
-      {
-        "input_type": "textarea",
-        "name": "Text",
-        "default": "President Donald Trump's physician, Navy Cmdr Dr. Sean Conley, held a second medical briefing that again raised more questions than answers about the President's condition.In another jarring news conference on Sunday, Trump's doctors said that even though the President has had at least two concerning drops in oxygen levels, they are hoping he could be discharged as early as tomorrow from Walter Reed National Military Medical Center.Conley and other doctors involved in the President's care offered some more information about the President's condition -- but there were still significant gaps that made it hard to decipher the full picture.Conley failed to answer basic questions about the President's condition and admitted that he had omitted those alarming drops in the President's oxygen levels during a news conference Saturday because he wanted to \"reflect the upbeat attitude\" that the team and the President had about his condition and didn't want \"to give any information that might steer the course of illness in another direction.\"Conley acknowledged that his evasive answers \"came off that we were trying to hide something\" but said that \"wasn't necessarily true,\" adding that the President is \"doing really well\" and is responding to treatment.During the briefing Sunday, Conley acknowledged that the President has experienced \"two episodes of transient drops in his oxygen saturation\" and said the team debated the reasons for that and whether to intervene. He said the President was given supplemental oxygen and has also been treated with the steroid dexamethasone, and his current blood oxygen level is 98%.But Conley refused to say how low the President's blood oxygen levels had dropped. When asked if they had dropped below 90, he replied, \"We don't have any recordings here of that.\" Pressed again on whether they had dropped below 90, Conley said the President's blood oxygen levels didn't get down into \"the low 80s.\"He offered no detail about what X-rays or CT scans have shown about whether there has been any damage to the President's lungs.\"There's some expected findings, but nothing of any major clinical concern,\" Conley said, not explaining whether they were expected findings in a normal patient or a Covid-19 patient.Some seven months into a pandemic that has killed more than 209,000 Americans, the nation is now facing a grave governing crisis with its commander in chief hospitalized -- his condition hinging on his progress over the coming days -- as the White House events of the past week serve as a textbook example of how not to handle a deadly virus"
-      }
-    ],
-    "outputs": [
-      {
-        "output_type": "text"
+        "output_type": "text",
+        "name": "generated_text"
       }
     ]
   },
@@ -296,6 +237,131 @@
       {
         "output_type": "text",
         "name": "generated_text"
+      }
+    ]
+  },
+  {
+    "objectID": "nhfnfdgzfdart",
+    "model_id": "60b6578da4585d36792e32f9",
+    "name": "GPT Neo 2.7B",
+    "path": "/gpt-neo-2-7B-text-generation",
+    "category": "NLP",
+    "nlpFilter": "Text Generation",
+    "tags": ["Text Generation"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 0.8,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
+
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "When I visit Bath I will"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "max_length",
+        "default": 15,
+        "max": 50,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text"
+      }
+    ]
+  },
+  {
+    "objectID": "q3f89oinlkoijlnkm9poijkl",
+    "model_id": "609e7716b635d67d627be711",
+    "name": "Detectron2",
+    "path": "/detectron2-bounding-boxes",
+    "category": "Vision",
+    "visionFilter": "Object Recognition",
+    "tags": ["Object Recognition"],
+    "predictionTime": 3.5,
+    "predictionDescription": "Avg time to compute an image",
+    "samples": ["Python"],
+    "inputs": [
+      {
+        "input_type": "image"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "render_image",
+        "default": 1
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "image",
+        "name": "image"
+      }
+    ]
+  },
+  {
+    "objectID": "uinj3487ubinj3qf98unoj",
+    "model_id": "60a50d0fbcfe327d47f4127a",
+    "name": "T5",
+    "path": "/t5",
+    "category": "NLP",
+    "nlpFilter": "Summarization",
+    "tags": ["Summarization"],
+    "predictionTime": 1.75,
+    "predictionDescription": "Avg time to compute 400 words (2595 chars)",
+    "samples": ["Python"],
+
+    "inputs": [
+      {
+        "input_type": "textarea",
+        "name": "Text",
+        "default": "President Donald Trump's physician, Navy Cmdr Dr. Sean Conley, held a second medical briefing that again raised more questions than answers about the President's condition.In another jarring news conference on Sunday, Trump's doctors said that even though the President has had at least two concerning drops in oxygen levels, they are hoping he could be discharged as early as tomorrow from Walter Reed National Military Medical Center.Conley and other doctors involved in the President's care offered some more information about the President's condition -- but there were still significant gaps that made it hard to decipher the full picture.Conley failed to answer basic questions about the President's condition and admitted that he had omitted those alarming drops in the President's oxygen levels during a news conference Saturday because he wanted to \"reflect the upbeat attitude\" that the team and the President had about his condition and didn't want \"to give any information that might steer the course of illness in another direction.\"Conley acknowledged that his evasive answers \"came off that we were trying to hide something\" but said that \"wasn't necessarily true,\" adding that the President is \"doing really well\" and is responding to treatment.During the briefing Sunday, Conley acknowledged that the President has experienced \"two episodes of transient drops in his oxygen saturation\" and said the team debated the reasons for that and whether to intervene. He said the President was given supplemental oxygen and has also been treated with the steroid dexamethasone, and his current blood oxygen level is 98%.But Conley refused to say how low the President's blood oxygen levels had dropped. When asked if they had dropped below 90, he replied, \"We don't have any recordings here of that.\" Pressed again on whether they had dropped below 90, Conley said the President's blood oxygen levels didn't get down into \"the low 80s.\"He offered no detail about what X-rays or CT scans have shown about whether there has been any damage to the President's lungs.\"There's some expected findings, but nothing of any major clinical concern,\" Conley said, not explaining whether they were expected findings in a normal patient or a Covid-19 patient.Some seven months into a pandemic that has killed more than 209,000 Americans, the nation is now facing a grave governing crisis with its commander in chief hospitalized -- his condition hinging on his progress over the coming days -- as the White House events of the past week serve as a textbook example of how not to handle a deadly virus"
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text"
+      }
+    ]
+  },
+  {
+    "objectID": "3fg78iuybhkf3q4wdfsf",
+    "model_id": "60d1d2f1861efa57850507a7",
+    "name": "DialoGPT",
+    "path": "/dialogpt-large",
+    "category": "NLP",
+    "nlpFilter": "Conversation",
+    "tags": ["Conversation"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 0.5,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 15 tokens with GPT Neo",
+
+    "inputs": [
+      {
+        "input_type": "text",
+        "name": "Text",
+        "default": "Hello how are you?"
+      },
+      {
+        "input_type": "number",
+        "hidden": true,
+        "input_as_kwarg": true,
+        "kwarg_name": "max_length",
+        "default": 1000,
+        "max": 2000,
+        "min": 0
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "generated_text_with_special_tokens"
       }
     ]
   },
