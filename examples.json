@@ -241,6 +241,58 @@
     ]
   },
   {
+    "objectID": "asdoigbsafoasjhxpcvhiguh",
+    "model_id": "60ca2a1e54f6ecb69867c72c",
+    "name": "GPT-2 Token Decoder",
+    "path": "/gpt-2-token-decoder",
+    "category": "NLP",
+    "nlpFilter": "Utilities",
+    "tags": ["Utilities"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 0.15,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 20 tokens with GPT2TokenizerFast",
+
+    "inputs": [
+      {
+        "input_type": "number",
+        "name": "Token id",
+        "default": 3791
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "text",
+        "name": "sequence"
+      }
+    ]
+  },
+  {
+    "objectID": "asdgaerhscboxygv3daerj",
+    "model_id": "60ca2a1e54f6ecb69867c72c",
+    "name": "GPT-2 Token Encoder",
+    "path": "/gpt-2-token-encoder",
+    "category": "NLP",
+    "nlpFilter": "Utilities",
+    "tags": ["Utilities"],
+    "samples": ["Python", "JavaScript", "cURL"],
+    "predictionTime": 0.15,
+    "predictionDescription": "Avg. time (s) a GPU is allocated to compute 20 tokens with GPT2TokenizerFast",
+
+    "inputs": [
+      {
+        "input_type": "TEXT",
+        "name": "Sequence",
+        "default": "I met a traveller from an antique land, who said"
+      }
+    ],
+    "outputs": [
+      {
+        "output_type": "number",
+        "name": "token_ids"
+      }
+    ]
+  },
+  {
     "objectID": "nhfnfdgzfdart",
     "model_id": "60b6578da4585d36792e32f9",
     "name": "GPT Neo 2.7B",
