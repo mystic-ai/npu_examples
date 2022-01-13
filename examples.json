@@ -242,7 +242,7 @@
   },
   {
     "objectID": "asdoigbsafoasjhxpcvhiguh",
-    "model_id": "60ca2a1e54f6ecb69867c72c",
+    "model_id": "61bcb317de464dfa00e0a2a7",
     "name": "GPT-2 Token Decoder",
     "path": "/gpt-2-token-decoder",
     "category": "NLP",
@@ -268,7 +268,7 @@
   },
   {
     "objectID": "asdgaerhscboxygv3daerj",
-    "model_id": "60ca2a1e54f6ecb69867c72c",
+    "model_id": "61bcad385829fb7b6a1faca2",
     "name": "GPT-2 Token Encoder",
     "path": "/gpt-2-token-encoder",
     "category": "NLP",
