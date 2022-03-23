@@ -1,9 +1,14 @@
-API_TOKEN="Insert here you API Token"
-curl -X POST "https://api.neuro-ai.co.uk/SyncPredict?include_result=true" \
-     -H "Accept:application/json" \
-     -H "Content-Type: application/json" \
-     -H "Authorization: Bearer $API_TOKEN" \
-     -d '{"modelId":"60ca2a1e54f6ecb69867c72c","data": "When I visit Bath I will", "input_kwargs": {"response_length": 50, "remove_input":false}}'
-     # response_length = how many response tokens to generate
-     # remove_input = whether to return your input
+curl --X POST 'https://api.pipeline.ai/v2/runs' \
+     --H 'Content-Type: application/json' \
+     --H 'Accept: application/json' \
+     --H 'Authorization: Bearer API_TOKEN' \
+     --d '{
+     "pipeline_id": "pipeline_d7502b78863744c495d7d22f321cf7ff",
+     "data": [
+               "I met a traveller from an antique land, who said",
+               {"response_length": 64, "remove_input": false}
+          ]
+     }'
+     # response_length = how many output tokens to generate
+     # remove_input = set to true if you want the response to include your input
      # all params from the transformers library `generate` function are supported

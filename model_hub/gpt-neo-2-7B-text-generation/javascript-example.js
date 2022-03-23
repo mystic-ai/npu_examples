@@ -1,15 +1,21 @@
-const API_TOKEN = ""; // Insert your API token from your dashboard
-
-fetch("https://api.neuro-ai.co.uk/SyncPredict?include_result=true", {
+fetch("https://api.pipeline.ai/v2/runs", {
   method: "POST",
   headers: {
-    Accept: "application/json",
     "Content-Type": "application/json",
-    Authorization: `Bearer ${API_TOKEN}`,
+    Accept: "application/json",
+    Authorization: "Bearer API_TOKEN",
   },
   body: JSON.stringify({
-    modelId: "60b6578da4585d36792e32f9",
-    data: ["When I visit Bath I will"],
-    input_kwargs: { max_length: 15 },
-  }),
-});
+    "pipeline_id": "pipeline_94e07942aef04433b198ecba3ff56f88",
+    "data": [
+      "I met a traveller from an antique land, who said",
+      {
+        "response_length": 64,  // how many output tokens to generate
+        "remove_input": false  // set to true if you want the response to include your input
+        // all params from the transformers library `generate` function are supported
+    },
+    ]
+  })
+})
+  .then(response => response.json())
+  .then(run => console.log(run.result_preview))

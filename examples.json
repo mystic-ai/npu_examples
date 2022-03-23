@@ -99,7 +99,7 @@
   },
   {
     "objectID": "98ohiunqclk3woh8inlk",
-    "model_id": "60a7b5224ae13749d81605a0",
+    "model_id": "pipeline_680ba5aef4f0405da3b91df24aec5906",
     "name": "GPT2",
     "path": "/gpt-2-text-generation",
     "category": "NLP",
@@ -112,30 +112,29 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "Hello my name is"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
         "hidden": false,
         "input_as_kwarg": true,
         "display_name": true,
-        "kwarg_name": "number_of_tokens",
-        "name": "New tokens (words/punctuation)",
-        "default": 10,
-        "max": 50,
-        "min": 0
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
   {
     "objectID": "pmoij089h78byiqvm",
-    "model_id": "60a40f81b635d67d627bf6b2",
+    "model_id": "pipeline_d87bbe44742642658f232a9329041a52",
     "name": "GPT Neo 125M",
     "path": "/gpt-neo-125M-text-generation",
     "category": "NLP",
@@ -149,28 +148,29 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
-        "hidden": true,
+        "hidden": false,
         "input_as_kwarg": true,
-        "kwarg_name": "max_length",
-        "default": 15,
-        "max": 50,
-        "min": 0
+        "display_name": true,
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
   {
     "objectID": "bgfhbgdfxbfgb",
-    "model_id": "60b65641cb49710df3af4866",
+    "model_id": "pipeline_47ace5e91c1742fc9aa41e72a52a5020",
     "name": "GPT Neo 1.3B",
     "path": "/gpt-neo-1-3B-text-generation",
     "category": "NLP",
@@ -184,28 +184,29 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
-        "hidden": true,
+        "hidden": false,
         "input_as_kwarg": true,
-        "kwarg_name": "max_length",
-        "default": 15,
-        "max": 50,
-        "min": 0
+        "display_name": true,
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
   {
     "objectID": "bgfhvbdxbfgb",
-    "model_id": "60ca2a1e54f6ecb69867c72c",
+    "model_id": "pipeline_d7502b78863744c495d7d22f321cf7ff",
     "name": "GPT-J 6B",
     "path": "/gpt-j-6B-text-generation",
     "category": "NLP",
@@ -219,24 +220,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
         "hidden": false,
         "input_as_kwarg": true,
         "display_name": true,
-        "kwarg_name": "max_length",
-        "name": "New tokens (words/punctuation)",
-        "default": 10,
-        "max": 50,
-        "min": 0
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
@@ -280,9 +280,9 @@
 
     "inputs": [
       {
-        "input_type": "TEXT",
+        "input_type": "text",
         "name": "Sequence",
-        "default": "I met a traveller from an antique land, who said"
+        "default": "I met a traveller"
       }
     ],
     "outputs": [
@@ -294,7 +294,7 @@
   },
   {
     "objectID": "nhfnfdgzfdart",
-    "model_id": "60b6578da4585d36792e32f9",
+    "model_id": "pipeline_94e07942aef04433b198ecba3ff56f88",
     "name": "GPT Neo 2.7B",
     "path": "/gpt-neo-2-7B-text-generation",
     "category": "NLP",
@@ -308,22 +308,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
-        "hidden": true,
+        "hidden": false,
         "input_as_kwarg": true,
-        "kwarg_name": "max_length",
-        "default": 15,
-        "max": 50,
-        "min": 0
+        "display_name": true,
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },

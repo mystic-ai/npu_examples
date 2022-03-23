@@ -1,16 +1,17 @@
-import os
-import npu
+from pipeline import PipelineCloud
 
-npu.api(os.environ["API_TOKEN"], deployed=True)
+api = PipelineCloud("API_TOKEN")
 
-model_id = '60ca2a1e54f6ecb69867c72c'
-data = ['When I visit Bath I will']
+run = api.run_pipeline(
+    "pipeline_d7502b78863744c495d7d22f321cf7ff",
+    [
+        "I met a traveller from an antique land, who said",
+        {
+            "response_length": 64,  # how many output tokens to generate
+            "remove_input": False  # set to True if you want the response to include your input
+            # all params from the transformers library `generate` function are supported
+        },
+    ],
+)
 
-kwargs = {
-    'response_length': 50, # how many response tokens to generate
-    'remove_input': False # whether to return your input
-    # all params from the transformers library `generate` function are supported
-}
-
-output = npu.predict(model_id, data, kwargs)
-print(output)
+print(run["result_preview"])
