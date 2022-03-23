@@ -112,24 +112,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "Hello my name is"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
         "hidden": false,
         "input_as_kwarg": true,
         "display_name": true,
-        "kwarg_name": "number_of_tokens",
-        "name": "New tokens (words/punctuation)",
-        "default": 10,
-        "max": 50,
-        "min": 0
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
@@ -149,22 +148,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
-        "hidden": true,
+        "hidden": false,
         "input_as_kwarg": true,
-        "kwarg_name": "max_length",
-        "default": 15,
-        "max": 50,
-        "min": 0
+        "display_name": true,
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
@@ -184,22 +184,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
-        "hidden": true,
+        "hidden": false,
         "input_as_kwarg": true,
-        "kwarg_name": "max_length",
-        "default": 15,
-        "max": 50,
-        "min": 0
+        "display_name": true,
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
@@ -219,24 +220,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
         "hidden": false,
         "input_as_kwarg": true,
         "display_name": true,
-        "kwarg_name": "max_length",
-        "name": "New tokens (words/punctuation)",
-        "default": 10,
-        "max": 50,
-        "min": 0
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
@@ -280,9 +280,9 @@
 
     "inputs": [
       {
-        "input_type": "TEXT",
+        "input_type": "text",
         "name": "Sequence",
-        "default": "I met a traveller from an antique land, who said"
+        "default": "I met a traveller"
       }
     ],
     "outputs": [
@@ -308,22 +308,23 @@
       {
         "input_type": "text",
         "name": "Text",
-        "default": "When I visit Bath I will"
+        "default": "I met a traveller"
       },
       {
         "input_type": "number",
-        "hidden": true,
+        "hidden": false,
         "input_as_kwarg": true,
-        "kwarg_name": "max_length",
-        "default": 15,
-        "max": 50,
-        "min": 0
+        "display_name": true,
+        "kwarg_name": "response_length",
+        "name": "response_length",
+        "default": 8,
+        "max": 64,
+        "min": 1
       }
     ],
     "outputs": [
       {
-        "output_type": "text",
-        "name": "generated_text"
+        "output_type": "text"
       }
     ]
   },
