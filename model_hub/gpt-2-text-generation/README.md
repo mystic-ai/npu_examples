@@ -1,4 +1,4 @@
-# GPT2 for Text Generation
+# GPT2-large for Text Generation
 
 #### Tags
 
@@ -14,34 +14,35 @@ This way, the model learns an inner representation of the English language that 
 
 ### How to use it
 
-To use this model as an API you will need your API Token. You can find it in the homepage of Neuro's Dashboard. If you don't have a Neuro account, you can register in the [Neuro Dashboard](https://dashboard.getneuro.ai/) and upgrade your account to either Developer or Premium to be able to use this model inmediately.
+To use this model as an API you will need your API Token. You can find it in the homepage of Pipeline Cloud's Dashboard. If you don't have a Pipeline Cloud account, you can register in the [Pipeline Cloud Dashboard](https://dashboard.pipeline.ai/) and upgrade your account to either Developer or Premium to be able to use this model inmediately.
 
-You will need the `npu` library which you can install with `pip install --upgrade npu`
+You will need the `pipeline` library which you can install with `pip install --U pipeline-ai`
 
 Using your API Token, this is all the code you need to run the model.
 
 ```python
-import npu
-import os
-import numpy as np
+from pipeline import PipelineCloud
 
-npu.api(os.environ['API_TOKEN'], deployed=True)
+api = PipelineCloud("API_TOKEN")
 
-input = "Hello my name is"
+run = api.run_pipeline(
+    "pipeline_680ba5aef4f0405da3b91df24aec5906",
+    [
+        "I met a traveller from an antique land, who said",
+        {
+            "response_length": 64,  # how many output tokens to generate
+            "remove_input": False  # set to True if you want the response to include your input
+            # all params from the transformers library `generate` function are supported
+        },
+    ],
+)
 
-output = npu.predict("60a7b5224ae13749d81605a0",
-    [[input]],
-    input_kwargs={
-        "number_of_tokens" : 10,
-    }
-    )[0]
-
-print("Input: %s\nOutput: %s" % (input, output))
+print(run["result_preview"])
 ```
 
 ### BibTeX and Citation
 
-Detectron2 is released under the Apache 2.0 license. Neuro provides instant infrastructure to allow access to their pre-trained model.
+GPT-2 is released under the Apache 2.0 license. Pipeline Cloud provides instant infrastructure to allow access to their pre-trained model.
 
 ```bibtex
 @article{radford2019language,

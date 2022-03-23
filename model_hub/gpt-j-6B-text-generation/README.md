@@ -10,37 +10,30 @@ GPT-J-6B is a transformer [model](https://github.com/kingoflolz/mesh-transformer
 
 ### How to use it
 
-To use this model as an API you will need your API Token. You can find it in the homepage of Neuro's Dashboard. If you don't have a Neuro account, you can register in the [Neuro Dashboard](https://dashboard.getneuro.ai/) and upgrade your account to either Developer or Premium to be able to use this model inmediately.
+To use this model as an API you will need your API Token. You can find it in the homepage of Pipeline Cloud's Dashboard. If you don't have a Pipeline Cloud account, you can register in the [Pipeline Cloud Dashboard](https://dashboard.pipeline.ai/) and upgrade your account to either Developer or Premium to be able to use this model inmediately.
 
-You will need the `npu` library which you can install with `pip install --upgrade npu`
+You will need the `pipeline` library which you can install with `pip install --U pipeline-ai`
 
 Using your API Token, this is all the code you need to run the model.
 
 ```python
-import npu
+from pipeline import PipelineCloud
 
-npu.api('API_TOKEN', deployed=True) # Change API_TOKEN with your personal API token
+api = PipelineCloud("API_TOKEN")
 
-model_id = '60ca2a1e54f6ecb69867c72c'
-data = ['When I visit Bath I will']
+run = api.run_pipeline(
+    "pipeline_d7502b78863744c495d7d22f321cf7ff",
+    [
+        "I met a traveller from an antique land, who said",
+        {
+            "response_length": 64,  # how many output tokens to generate
+            "remove_input": False  # set to True if you want the response to include your input
+            # all params from the transformers library `generate` function are supported
+        },
+    ],
+)
 
-kwargs = {
-    'response_length':15, # how many response tokens to generate [Int]
-    'remove_input': False, # whether to return your input (Default: False) [Bool]
-    # all params from the transformers library `generate` function are supported
-}
-
-output = npu.predict(model_id, data, kwargs)
-print(output)
-```
-
-If you run the script above, in your terminal you will see a similar output to the following,
-
-```
-[Neuro Ai] 16:20:17 - [INFO]: DEPLOYMENT MODE
-[Neuro Ai] 16:20:17 - [INFO]: Token successfully authenticated
-[Neuro Ai] 16:20:17 - [INFO]: Using project: Default
-[{'generated_text': 'When I visit Bath I will drive out of my home and spend the next'}]
+print(run["result_preview"])
 ```
 
 ### Performance
@@ -53,7 +46,7 @@ The zero-shot performance is roughly on par with GPT-3 of comparable size, and t
 
 More information regarding the model and how it's been trained by the authors can be found [here](https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/). The original model can be found [here](https://github.com/kingoflolz/mesh-transformer-jax). Thanks to @finetuneanon for his support on translating the model to work on GPU and half precision.
 
-Neuro provides instant infrastructure to allow access to their trained model.
+Pipeline Cloud provides instant infrastructure to allow access to their trained model.
 
 ```bibtex
 @misc{gpt-j,
